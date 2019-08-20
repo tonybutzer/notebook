@@ -3,7 +3,7 @@ Image='tbutzer/notebook'
 build:
 	docker build -t ${Image} .
 
-
+          
 push:
-	docker login -u tbutzer
-	docker push tbutzer/notebook
+	docker login -u rhassan03
+	docker push rhassan03/jupyter-notebook
