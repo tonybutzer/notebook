@@ -34,7 +34,6 @@ RUN apt-get install -y --no-install-recommends \
       unzip && apt-get clean
 
 RUN pip3 install --no-cache jupyterhub=='0.8.*' notebook
-RUN pip3 install pandas
 
 ENV HOME="${NB_HOME}"
 WORKDIR "${HOME}"
