@@ -23,6 +23,7 @@ install -d -g $NB_GID -o $NB_UID \
 
 # Notebook dependencies (download as pdf, plus misc)
 RUN apt-get install -y --no-install-recommends \
+      make \
       vim \
       lmodern \
       texlive-fonts-extra \
@@ -37,6 +38,11 @@ RUN apt-get install -y --no-install-recommends \
 
 RUN pip3 install --no-cache jupyterhub=='0.8.*' notebook \
     && pip3 install boto3
+
+RUN mkdir -p /opt
+WORKDIR /opt
+RUN git clone https://github.com/tonybutzer/lite-stac.git \
+	&& (cd /opt/lite-stac/lib && make)
 
 ENV HOME="${NB_HOME}"
 ENV CURL_CA_BUNDLE=/etc/ssl/certs/ca-certificates.crt
