@@ -56,6 +56,12 @@ https://github.com/tonybutzer/lunch.git
 
 ## Start labs for above repos
 
+## Binder (directories)
+
+https://github.com/tonybutzer/notebook/tree/master/binder
+
+https://github.com/tonybutzer/lunch/tree/master/binder
+
 ## Plotting
 
 

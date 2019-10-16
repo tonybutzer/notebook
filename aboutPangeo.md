@@ -15,7 +15,7 @@
 		- GDAL, 
 		- and many other packages
 
-[arch](https://pangeo.io/_images/pangeo_tech_1.png)
+![arch](https://pangeo.io/_images/pangeo_tech_1.png)
 
 # ESIP Sponsored
 
