@@ -51,3 +51,26 @@ https://github.com/tonybutzer/notebook.git
 
 https://github.com/tonybutzer/lunch.git
 
+
+# Demo Script
+
+## Start labs for above repos
+
+## Plotting
+
+
+1. venn diagram
+2. pie chart
+3. radar chart
+4. pokeman data scientist
+
+## Xarray = Hanoi
+
+## Further ODC study
+
+1. Pangeo itself
+2. Creating CONTAINED, REPEATABLE, JupyterHubs in CHS
+3. STAC ecosystems and evolution
+4. AWS technology selection criteria - cloud strategies for portability
+
+
