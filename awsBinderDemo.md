@@ -1,4 +1,4 @@
-# Aws Binder Demo
+# Aws PANGEO Binder Demo
 
 ### This demo is about the scientist consuming data!
 
@@ -49,6 +49,11 @@ Historically the Scientist spent TOO MUCH TIME:
 	- Google Pangeo
 	- HPC Pangeo
 4. private notebooks - see contingencies
+
+
+## PANGEO LINK
+
+[PANGEO](https://github.com/tonybutzer/notebook/blob/master/aboutPangeo.md)
 
 
 
