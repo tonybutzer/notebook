@@ -55,6 +55,11 @@ Historically the Scientist spent TOO MUCH TIME:
 
 [PANGEO](https://github.com/tonybutzer/notebook/blob/master/aboutPangeo.md)
 
+```
+if ( PANGEO == cool_sandboxes):
+	print("Please Play in one of these with jupyter")
+	print("ipynb is an extension from the old ipython kernel")
+```
 
 
 ## Mission
