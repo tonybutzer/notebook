@@ -15,6 +15,43 @@ Historically the Scientist spent TOO MUCH TIME:
 ![science](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9IfrG_7Uia2s6Ci5q6GF866QJRmCrrRbRcXpDL1I7OuONQjJ)
 
 
+## Notebooks
+
+1. Derivative Products
+	- LCMAP
+	- WOFS
+	- Classifications - Fractional Coverages
+	- Mosaics and Composites
+	- NDVI thingies
+2. Tutorials
+3. Prototypes and Demos
+4. Code fragments - future libraries
+5. and many more ...
+
+## Sandboxes
+
+### In search of the perfect sandbox
+
+1. easy to use
+2. powerfull
+3. free
+4. someone else's problem - sandbox technolgy stack is hard
+
+### Candidates
+
+#### None are perfect yet - but this one is closer
+
+1. frontiersi
+2. pangeo.chs.usgs.gov # DEFUNCT
+3. ESIPs Pangeo
+	- us-west-2
+	- THIS ONE - aws binder us-west-2
+	- Google Pangeo
+	- HPC Pangeo
+4. private notebooks - see contingencies
+
+
+
 ## Mission
 
 ### Save the Planet
@@ -100,3 +137,8 @@ https://github.com/tonybutzer/lunch/tree/master/binder
 4. AWS technology selection criteria - cloud strategies for portability
 
 
+## Tricks
+
+```
+curl ifconfig.co
+```
