@@ -53,6 +53,11 @@ standing on the shoulders ...
 4. jupyter (notebooks, labs, hubs)
 
 
+## Contigencies
+
+- Riz1 Cloud Instance
+- llsrlscd04 - local virtual machine with docker
+
 ## Specific Ingredients
 
 ### Howto
