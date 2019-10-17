@@ -33,9 +33,9 @@ Historically the Scientist spent TOO MUCH TIME:
 ### In search of the perfect sandbox
 
 1. easy to use
-2. powerfull
+2. powerful
 3. free
-4. someone else's problem - sandbox technolgy stack is hard
+4. someone else's problem - sandbox technology stack is hard
 
 ### Candidates
 
@@ -90,7 +90,7 @@ standing on the shoulders ...
 4. jupyter (notebooks, labs, hubs)
 
 
-## Contigencies
+## Contingencies
 
 - Riz1 Cloud Instance
 - llsrlscd04 - local virtual machine with docker
