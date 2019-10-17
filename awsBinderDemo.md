@@ -166,7 +166,7 @@ curl ifconfig.co
 
 https://zapier.com/blog/scale-yourself-scott-hanselman/
 
-## How's GA Doing - whatevere happened to that Africa stuff?
+## How's GA Doing - what ever happened to that Africa stuff?
 
 ```
 
