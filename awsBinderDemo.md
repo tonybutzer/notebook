@@ -37,6 +37,7 @@ Historically the Scientist spent TOO MUCH TIME:
 3. free
 4. someone else's problem - sandbox technology stack is hard
 
+
 ### Candidates
 
 #### None are perfect yet - but this one is closer
@@ -49,6 +50,8 @@ Historically the Scientist spent TOO MUCH TIME:
 	- Google Pangeo
 	- HPC Pangeo
 4. private notebooks - see contingencies
+
+### Hey Tony, How we gonna do that Lunch-&-Learn?
 
 
 ## PANGEO LINK
