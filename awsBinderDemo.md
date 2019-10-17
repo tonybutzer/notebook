@@ -9,7 +9,7 @@ Historically the Scientist spent TOO MUCH TIME:
 ![curation](https://tr3.cbsistatic.com/hub/i/r/2016/05/25/805d84c4-4433-4e88-8deb-beba35642fd7/resize/770x/8310bac8293c2ff33234a742de31e1a6/dataproc.jpg)
 
 2. Infrastructure - 10%
-![infra](https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiR1ouz7aLlAhXKVN8KHTsGCjYQjRx6BAgBEAQ&url=%2Furl%3Fsa%3Di%26source%3Dimages%26cd%3D%26ved%3D%26url%3Dhttps%253A%252F%252Fwww.een.com%252Feagle-eye-infrastructure-overview%252F%26psig%3DAOvVaw2yoHS0PLidEhs8gpvNO041%26ust%3D1571386573962216&psig=AOvVaw2yoHS0PLidEhs8gpvNO041&ust=1571386573962216)
+![infra](https://www.veritis.com/wp-content/uploads/2019/06/it-infrastructure-services-1.png)
 
 ## What if the Scientist could just do science?
 ![science](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTE9IfrG_7Uia2s6Ci5q6GF866QJRmCrrRbRcXpDL1I7OuONQjJ)
