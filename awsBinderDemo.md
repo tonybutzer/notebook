@@ -142,3 +142,28 @@ https://github.com/tonybutzer/lunch/tree/master/binder
 ```
 curl ifconfig.co
 ```
+
+## How's GA Doing - whatevere happened to that Africa stuff?
+
+```
+
+Leith Alex <Alex.Leith@ga.gov.au>
+Wed, Oct 16, 5:30 PM (10 hours ago)
+to me, Gavin
+
+Hey Tony
+
+The story I'm telling in a little presentation this evening is this:
+
+-- Running the process on 3 on-demand EC2s took 50 hours and cost $200 USD
+-- Running the process on 10 spot EC2s took 5 hours and cost $20 USD.
+
+So that's ~2 orders of magnitude better, if cost and time are equal!
+
+We ran 400-500 containers and we could scale this out very easily. I guess the time reduction is pretty much linear with how many containers and EC2 instances we have.
+
+We're about to run 2019 WOfS today, so hopefully we have similar numbers out of that!
+
+Cheers, Alex
+
+```
