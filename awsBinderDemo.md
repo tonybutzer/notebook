@@ -95,6 +95,17 @@ standing on the shoulders ...
 - Riz1 Cloud Instance
 - llsrlscd04 - local virtual machine with docker
 
+![null](https://www.hanselman.com/blog/content/binary/Windows-Live-Writer/f7e432634b00_9C16/image_4.png)
+
+"It turns out," he continues, "the less that you do, the more of it that you can do. This is the standard law of scale."
+
+What if you just had?
+
+1. Dockerfile
+2. Makefile
+3. Markdown
+
+
 ## Specific Ingredients
 
 ### Howto
@@ -142,6 +153,8 @@ https://github.com/tonybutzer/lunch/tree/master/binder
 ```
 curl ifconfig.co
 ```
+
+https://zapier.com/blog/scale-yourself-scott-hanselman/
 
 ## How's GA Doing - whatevere happened to that Africa stuff?
 
