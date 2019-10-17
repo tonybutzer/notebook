@@ -105,6 +105,13 @@ standing on the shoulders ...
 - Riz1 Cloud Instance
 - llsrlscd04 - local virtual machine with docker
 
+### If there is time
+```
+thirty_mins = 60 * 30
+if (time < thirty_mins):
+	demo_llsrlscd04(dockerhub='tbutzer/jupyter-lite')
+```
+
 ![null](https://www.hanselman.com/blog/content/binary/Windows-Live-Writer/f7e432634b00_9C16/image_4.png)
 
 "It turns out," he continues, "the less that you do, the more of it that you can do. This is the standard law of scale."
