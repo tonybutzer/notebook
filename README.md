@@ -1,2 +1,10 @@
 # notebook
-jupyter notebook container - for scenelist
+
+This repository is for collecting useful examples of notebooks and testing them in various sandboxes agains various datalakes
+
+# Sandboxes
+	- DE Africa
+	- pangeo.io
+	- pangeo aws binder
+
+## Organization
