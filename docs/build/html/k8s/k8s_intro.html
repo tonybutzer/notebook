@@ -1,0 +1,365 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Kubernetes Intro &mdash; notebook via tljh 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> notebook via tljh
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../littlehub.html">Little Hub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#bootstrap-its-that-easy">Bootstrap - Its that easy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#adding-users">Adding Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#services">Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#goals">Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#why">Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#steps-wbs">Steps/WBS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#id1">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#iac-littlehub">IAC - littlehub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../littlehub.html#sizing">Sizing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../littlehub.html#instance-perspective">Instance Perspective</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../littlehub.html#tables-now-work-well-thanks-tony">Tables now work well - Thanks Tony</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#install-jupyter-hub">Install Jupyter Hub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#configure-jupyter-hub">Configure Jupyter Hub</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">notebook via tljh</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Kubernetes Intro</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/k8s/k8s_intro.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="kubernetes-intro">
+<h1>Kubernetes Intro<a class="headerlink" href="#kubernetes-intro" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="what-is-k8s">
+<h2>What is k8s?<a class="headerlink" href="#what-is-k8s" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Container Management Tool!</p></li>
+<li><p>Containers are good!</p>
+<ul>
+<li><p>scalable - but how? - k8s</p></li>
+</ul>
+</li>
+<li><p>k8s manages the containers</p></li>
+<li><p>k8s manages an overlay network and a set of services</p>
+<ul>
+<li><p>resource discovery</p></li>
+</ul>
+</li>
+<li><p>k8s adds autoscaling</p></li>
+<li><p>k8s does load balancing</p></li>
+<li><p>k8s does replicas</p></li>
+<li><p>k8s groups conatiners (microkernel services) into logical groups</p></li>
+</ul>
+</div>
+<div class="section" id="why-k8s">
+<h2>WHY K8S?<a class="headerlink" href="#why-k8s" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>ROBUST and RELIABLE</p></li>
+<li><p>K8S is an abbrevation for Kuberenetes</p></li>
+<li><p>bases for juperhub deployments</p></li>
+<li><p>Google built it and uses it</p></li>
+<li><p>Tools use the Go language</p>
+<ul>
+<li><p>https://tour.golang.org/welcome/1</p></li>
+<li><p>https://gobyexample.com/</p></li>
+</ul>
+</li>
+<li><p>automated binpacking</p></li>
+<li><p>Service Discovery</p></li>
+<li><p>Storage Orchestration</p></li>
+<li><p>Self Healing</p></li>
+<li><p>Batch Execution</p></li>
+<li><p>Horizontal Scalig</p></li>
+<li><p>Secret &amp; Configuration Managment</p></li>
+<li><p>Automatic Rollbacks &amp; Rollouts</p></li>
+</ul>
+</div>
+<div class="section" id="declarative">
+<h2>Declarative<a class="headerlink" href="#declarative" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Desired State - Deployment File : application1.yaml</p>
+<ul>
+<li><p>PODS</p>
+<ul>
+<li><p>Replicas (ie: 3)</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="components">
+<h2>Components<a class="headerlink" href="#components" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Master</p>
+<ul>
+<li><p>k8s cluster services</p>
+<ul>
+<li><p>API</p></li>
+</ul>
+</li>
+<li><p>Controller Manager + Scheduler</p>
+<ul>
+<li><p>manages core control loops</p></li>
+<li><p>scheduler - watches for new pods and places the pods on the best nodes</p></li>
+<li><p>Api Server –&gt; etcd</p>
+<ul>
+<li><p>central hub</p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>Workers</p>
+<ul>
+<li><p>kubelet for communicating</p>
+<ul>
+<li><p>agent for launching pods</p></li>
+<li><p>uses docker underneath</p></li>
+<li><p>PodSpec scope only</p></li>
+<li><p>cadvisior is leveraged to understand node resource levels</p></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p>The pod</p>
+<ul>
+<li><p>made up of one or more containers</p></li>
+<li><p>often a single container</p></li>
+<li><p>share a unique network namespace and ip range</p></li>
+</ul>
+</li>
+<li><p>Labels</p>
+<ul>
+<li><p>can label pods</p></li>
+<li><p>help identify resources</p></li>
+<li><p>selectors can then be used within k8s</p></li>
+<li><p>examples app=frontend, app=backend, run=myappPod</p></li>
+<li><p>https://kubernetes.io/docs/concepts/overview/working-with-objects/common-labels/</p></li>
+</ul>
+</li>
+<li><p>ReplicaSet</p>
+<ul>
+<li><p>a resource that tempates the creation of pods</p></li>
+<li><p>a count of the number of desired replicas</p></li>
+<li><p>a selector that refers to the desired pods</p></li>
+<li><p>pods can be evicted; or a node may go down</p></li>
+<li><p>ReplicaSet is a better/newer name for ReplicaController</p></li>
+<li><p>these are managed via a Deployment File: a.yaml</p></li>
+</ul>
+</li>
+<li><p>Services</p>
+<ul>
+<li><p>give a convienent way to access our application services</p></li>
+<li><p>plus service discovery</p></li>
+<li><p>stable IP address and/or DNS Name</p></li>
+<li><p>typically accessed in a round robin fashion - via frontend service (load balancer)</p></li>
+<li><p>the IP address is the address of the service</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="myths">
+<h2>Myths<a class="headerlink" href="#myths" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Not a Containerization Platform - still need docker for that</p></li>
+<li><p>Not for simple architectures</p></li>
+</ul>
+</div>
+<div class="section" id="compare-swarm">
+<h2>Compare Swarm<a class="headerlink" href="#compare-swarm" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://drive.google.com/open?id=1Nn_MkEDeIfIHU8td4zpjqzFf4idDHSY-">COMPARE swarm</a></p>
+</div>
+<div class="section" id="k8s-architecture">
+<h2>k8s Architecture<a class="headerlink" href="#k8s-architecture" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://drive.google.com/open?id=1gBiNgADUNvb9lG2PU7Vvo6lOo2xDIA2o">Architecture Picture LINK</a></p>
+<p><a class="reference external" href="https://drive.google.com/open?id=1l8eou6Y9lUO1dVR4ARe1rVMHx4d1nz_U">Working Model LINK</a></p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="what-is-kubernetes-kubernetes-introduction-kubernetes-tutorial-for-beginners-edureka">
+<h3>What Is Kubernetes | Kubernetes Introduction | Kubernetes Tutorial For Beginners | Edureka<a class="headerlink" href="#what-is-kubernetes-kubernetes-introduction-kubernetes-tutorial-for-beginners-edureka" title="Permalink to this headline">¶</a></h3>
+<p>https://www.youtube.com/watch?v=F-p_7XaEC84</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Tony Butzer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

@@ -1,0 +1,353 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Minikube Up and Running &mdash; notebook via tljh 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="../_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+        <script type="text/javascript" src="../_static/jquery.js"></script>
+        <script type="text/javascript" src="../_static/underscore.js"></script>
+        <script type="text/javascript" src="../_static/doctools.js"></script>
+        <script type="text/javascript" src="../_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="../_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="../index.html" class="icon icon-home"> notebook via tljh
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../littlehub.html">Little Hub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#bootstrap-its-that-easy">Bootstrap - Its that easy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#adding-users">Adding Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#services">Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#goals">Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#why">Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#steps-wbs">Steps/WBS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#id1">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#iac-littlehub">IAC - littlehub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../littlehub.html#sizing">Sizing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../littlehub.html#instance-perspective">Instance Perspective</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../littlehub.html#tables-now-work-well-thanks-tony">Tables now work well - Thanks Tony</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#install-jupyter-hub">Install Jupyter Hub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../littlehub.html#configure-jupyter-hub">Configure Jupyter Hub</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">notebook via tljh</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="../index.html">Docs</a> &raquo;</li>
+        
+      <li>Minikube Up and Running</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="../_sources/k8s/minikube.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="minikube-up-and-running">
+<h1>Minikube Up and Running<a class="headerlink" href="#minikube-up-and-running" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="jose-host">
+<h2>jose host<a class="headerlink" href="#jose-host" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>local linux host - debian based</p></li>
+</ul>
+</div>
+<div class="section" id="virtual-box">
+<h2>Virtual Box<a class="headerlink" href="#virtual-box" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="install">
+<h3>Install<a class="headerlink" href="#install" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get install -y virtualbox
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="kubectl">
+<h2>kubectl<a class="headerlink" href="#kubectl" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>sudo apt-get update <span class="o">&amp;&amp;</span> sudo apt-get install -y apt-transport-https
+curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg <span class="p">|</span> sudo apt-key add -
+<span class="nb">echo</span> <span class="s2">&quot;deb https://apt.kubernetes.io/ kubernetes-xenial main&quot;</span> <span class="p">|</span> sudo tee -a /etc/apt/sources.list.d/kubernetes.list
+sudo apt-get update
+sudo apt-get install -y kubectl
+</pre></div>
+</div>
+</div>
+<div class="section" id="minikube">
+<h2>minikube<a class="headerlink" href="#minikube" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>wget https://storage.googleapis.com/minikube/releases/latest/minikube-linux-amd64
+chmod +x minikube-linux-amd64
+sudo mv minikube-linux-amd64 /usr/local/bin/minikube
+</pre></div>
+</div>
+<div class="section" id="starting">
+<h3>STARTING<a class="headerlink" href="#starting" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">minikube</span> <span class="n">start</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>“minikube” IP address is 192.168.99.100</p></li>
+</ul>
+</div>
+<div class="section" id="kubctl-context">
+<h3>kubctl context<a class="headerlink" href="#kubctl-context" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>tony@jose ~/opt/juphub/docs $ more ~/.kube/config
+apiVersion: v1
+clusters:
+- cluster:
+    certificate-authority: /home/tony/.minikube/ca.crt
+    server: https://192.168.99.100:8443
+  name: minikube
+contexts:
+- context:
+    cluster: minikube
+    user: minikube
+  name: minikube
+current-context: minikube
+kind: Config
+preferences: {}
+users:
+- name: minikube
+  user:
+    client-certificate: /home/tony/.minikube/client.crt
+    client-key: /home/tony/.minikube/client.key
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>set as follows</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">kubectl</span> <span class="n">config</span> <span class="n">use</span><span class="o">-</span><span class="n">context</span> <span class="n">minikube</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="sample-commands">
+<h3>Sample commands<a class="headerlink" href="#sample-commands" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">alias</span> <span class="n">k</span><span class="o">=</span><span class="n">kubectl</span>
+
+<span class="n">k</span> <span class="n">describe</span> <span class="n">node</span><span class="o">/</span><span class="n">minikube</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="minikube-docker-local-to-vm">
+<h2>minikube docker local to VM<a class="headerlink" href="#minikube-docker-local-to-vm" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>docker ps
+docker version
+
+minikube docker-env
+
+<span class="nb">eval</span> <span class="k">$(</span>minikube docker-env<span class="k">)</span>
+
+docker version
+docker ps <span class="c1"># whoa!</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="create-a-makefile">
+<h2>Create a Makefile<a class="headerlink" href="#create-a-makefile" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>see labs in the juphub github repo under minikube</p></li>
+</ul>
+</div>
+<div class="section" id="nodeport">
+<h2>NodePort<a class="headerlink" href="#nodeport" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>expose a tandom port on the minikube VM - so we can access our service easily?</p></li>
+<li><p>a service with NodePort type - k8s allocates us a port for the service to be exposed on</p>
+<ul>
+<li><p>in a multi-node cluster this will be exposed on every node in the cluster</p></li>
+</ul>
+</li>
+</ul>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>tony@jose ~/opt/juphub/labs/minikube $ make hello_getip
+minikube ip
+<span class="m">192</span>.168.99.100
+kubectl get svc/hello
+NAME    TYPE       CLUSTER-IP       EXTERNAL-IP   PORT<span class="o">(</span>S<span class="o">)</span>        AGE
+hello   NodePort   <span class="m">10</span>.108.138.155   &lt;none&gt;        <span class="m">80</span>:31442/TCP   6m35s
+<span class="nb">echo</span> <span class="s2">&quot;curl &lt;ip&gt;:&lt;port&gt;&quot;</span>
+curl &lt;ip&gt;:&lt;port&gt;
+tony@jose ~/opt/juphub/labs/minikube $ curl <span class="m">192</span>.168.99.100:31442
+&lt;h1&gt;Hello World minikube&lt;/h1&gt;
+tony@jose ~/opt/juphub/labs/minikube $ curl <span class="m">10</span>.108.138.155:31442
+^C
+tony@jose ~/opt/juphub/labs/minikube $ curl <span class="m">10</span>.108.138.155:80
+^C
+</pre></div>
+</div>
+<ul class="simple">
+<li><p><strong>NOTE:</strong> because its a NodePort - neither of the last 2 curls work</p></li>
+</ul>
+</div>
+<div class="section" id="kubectl-run">
+<h2>kubectl run<a class="headerlink" href="#kubectl-run" title="Permalink to this headline">¶</a></h2>
+<p>from book:</p>
+<p>When we executed –kubectl run–, Kubernetes created a new sort of resource: a <strong>deployment</strong>.</p>
+<ul class="simple">
+<li><p>higher level abstraction manages the underlying ReplicaSet</p></li>
+<li><p>changes to our application can be managed in roll-outs etc</p></li>
+</ul>
+<p><a class="reference external" href="https://drive.google.com/open?id=18ZiO3oXa4BDeOt8i3ECQvMk_ni-z8Lr1">hello arch diag LINK</a></p>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Tony Butzer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
