@@ -2,24 +2,45 @@
 
 ## Bootstrap - Its that easy
 
-1. cd /opt/jup/juphub/pkg
+1. cd /opt/notebook/pkg
 
     make
     make shared
 
-2. the user ubuntu becomes the admin - set password as ubuntu
 
-
-  This runs bootstrap.py
-
+    - This runs bootstrap.py
 ```
 Setting up TLJH installer...
 ```
+
+Then login as
+	- ubuntu ubuntu
+
+Then
+	- make jupyter-ubuntu
+
+
+Then 
+```
+make git
+
+make lunch-lib
+
+make notebook-lib
+
+# installs gdal - takes time
+```
+
+2. the user ubuntu becomes the admin - set password as ubuntu
+
 
 
 ## Adding Users
 
 Control Panel -> Admin -> Add Users
+
+- daffy
+- minnie
 
 ## Services
 

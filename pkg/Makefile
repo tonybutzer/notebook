@@ -16,6 +16,8 @@ shared:
 	sudo mkdir -p /srv/data/code
 	(cd /etc/skel && sudo ln -s /srv/data/code code)
 	sudo cp files/* /srv/data/code
+
+jupyter-ubuntu:
 	sudo chown -R  jupyter-ubuntu:jupyter-ubuntu /srv/data/code
 
 
