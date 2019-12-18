@@ -1,5 +1,22 @@
 # Little Hub
 
+## Synopsys
+```
+(cd /opt/notebook/pkg; make all)
+# login as ubuntu ubuntu
+(cd /opt/notebook/pkg; make jupyter-ubuntu) # sets permissions
+ifconfig |grep 10
+```
+
+- adduser daffy
+- login as daffy duck
+	- test tutorials
+		- test pieschke
+		- test plots
+		- test kirill labs
+
+
+
 ## Bootstrap - Its that easy
 
 1. cd /opt/notebook/pkg
