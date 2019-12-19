@@ -9,4 +9,4 @@ This repository is for collecting useful examples of notebooks and testing them 
 
 ## Organization
 
-!(mine map)[https://raw.githubusercontent.com/tonybutzer/assets/master/diagrams/noteboot-mind-map.png]
+![mind map](https://raw.githubusercontent.com/tonybutzer/assets/master/diagrams/noteboot-mind-map.png)
