@@ -8,3 +8,5 @@ This repository is for collecting useful examples of notebooks and testing them 
 	- pangeo aws binder
 
 ## Organization
+
+!(mine map)[https://raw.githubusercontent.com/tonybutzer/assets/master/diagrams/noteboot-mind-map.png]
