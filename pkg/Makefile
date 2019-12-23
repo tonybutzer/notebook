@@ -17,7 +17,7 @@ cows:
 	sudo apt-get install cowsay
 
 small:
-	sudo cp ../00-Run-Me-For-Sample-Notebooks-via-git.ipynb /srv/code
+	sudo cp ../00-Run-Me-For-Sample-Notebooks-via-git.ipynb /etc/skel
 
 fix-rasterio-curl-cert:
 	sudo mkdir -p /etc/pki/tls/certs
