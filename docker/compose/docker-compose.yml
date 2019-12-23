@@ -1,0 +1,7 @@
+version: '3'
+services:
+  
+  jupyter:
+    image: tbutzer/jupyter-lite
+    ports:
+      - "80:8888"
