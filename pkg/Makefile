@@ -20,8 +20,8 @@ small:
 	sudo cp ../00-Run-Me-For-Sample-Notebooks-via-git.ipynb /srv/code
 
 fix-rasterio-curl-cert:
-	mkdir -p /etc/pki/tls/certs
-	ln -s /etc/ssl/certs/ca-certificates.crt /etc/pki/tls/certs/ca-bundle.crt
+	sudo mkdir -p /etc/pki/tls/certs
+	sudo ln -s /etc/ssl/certs/ca-certificates.crt /etc/pki/tls/certs/ca-bundle.crt
 
 shared:
 	sudo mkdir -p /srv/data/code
