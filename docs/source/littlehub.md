@@ -181,3 +181,27 @@ Right aligned columns
 
 1. https - Bill Howe - cert - delegate to Rizbi
 2. Add users shared password and whitelist - more on authentication later - See Sam's SAML
+
+## Installing the R Kernel
+
+My approach was to mimic the docker container built here
+
+**https://hub.docker.com/r/jupyter/r-notebook/dockerfile**
+
+
+and package that into a Makefile in the pkg/R directory
+
+so to install R - run
+
+```
+make r-apt
+```
+
+then login as ubuntu and make the conda part of R.
+
+as 
+
+```
+make r-conda
+```
+
