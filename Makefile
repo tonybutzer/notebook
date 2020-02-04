@@ -9,3 +9,7 @@ publish:
 
 up:
 	(cd swarm; make start; make xrdp)
+
+
+lite:
+	(cd opt; git clone http://github.com/tonybutzer/lite-stac)
