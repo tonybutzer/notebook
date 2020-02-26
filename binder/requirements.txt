@@ -3,3 +3,4 @@ matplotlib_venn
 pandas
 seaborn
 plotly
+awscli
