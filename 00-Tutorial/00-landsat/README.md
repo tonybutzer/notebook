@@ -2,7 +2,7 @@
 
 These notebooks will show users how to interact with Landsat data in the cloud. The notebooks were used as part of a Pangeo Demo held held at USGS EROS, Sioux Falls, South Dakota on December 19-20 2019.
 
-Lunch and Learn Day 1 Notebook:
+Beginner Tutorial:
 1.       What is Python 
 2.       Benefits to learning Python 
 3.       What is a Juypter Notebook 
@@ -16,7 +16,7 @@ Lunch and Learn Day 1 Notebook:
 11.      Accessing and visualizing vector files in a Juypter Notebook
 12.      Accessing and visualizing cloud based Landsat Data in Juypter Notebook 
 
-Lunch and Learn Day 2 Notebook:
+Advanced Tutorial:
 
 1.       Searching for Landsat data in the cloud  
 2.       Introduction to Pandas 
@@ -27,3 +27,10 @@ Lunch and Learn Day 2 Notebook:
 7.       Creating displaying custom charts with Landsat data in the cloud 
 8.       Creating custom masks from numpy arrays 
 9.       Create and export custom layouts 
+
+Working with Xarrays and Dask
+1.       Searching STAC Records for assets
+2.       Creating Pandas Dataframe for assets
+3.       Creating a xarray from a scene for an area of interest
+4.       Assigning compute scaling with dask
+5.       Visualizing a time series with Holoviews
