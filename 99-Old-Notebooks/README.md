@@ -1,2 +1,0 @@
-# dcnotebook
-Data Cube Notebooks

@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Little Hub &mdash; notebook via tljh 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to juphub’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> notebook via tljh
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Little Hub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bootstrap-its-that-easy">Bootstrap - Its that easy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-users">Adding Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#services">Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#goals">Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#why">Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#steps-wbs">Steps/WBS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#iac-littlehub">IAC - littlehub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#sizing">Sizing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#instance-perspective">Instance Perspective</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tables-now-work-well-thanks-tony">Tables now work well - Thanks Tony</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#install-jupyter-hub">Install Jupyter Hub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#configure-jupyter-hub">Configure Jupyter Hub</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">notebook via tljh</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Little Hub</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/littlehub.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="little-hub">
+<h1>Little Hub<a class="headerlink" href="#little-hub" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="bootstrap-its-that-easy">
+<h2>Bootstrap - Its that easy<a class="headerlink" href="#bootstrap-its-that-easy" title="Permalink to this headline">¶</a></h2>
+<ol>
+<li><p>cd /opt/jup/juphub/pkg</p>
+<p>make
+make shared</p>
+</li>
+<li><p>the user ubuntu becomes the admin - set password as ubuntu</p></li>
+</ol>
+<p>This runs bootstrap.py</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">Setting</span> <span class="n">up</span> <span class="n">TLJH</span> <span class="n">installer</span><span class="o">...</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="adding-users">
+<h2>Adding Users<a class="headerlink" href="#adding-users" title="Permalink to this headline">¶</a></h2>
+<p>Control Panel -&gt; Admin -&gt; Add Users</p>
+</div>
+<div class="section" id="services">
+<h2>Services<a class="headerlink" href="#services" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>traefik</p></li>
+<li><p>jupyterhub</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">systemctl</span> <span class="n">status</span> <span class="n">jupyterhub</span>
+
+<span class="n">systemctl</span> <span class="n">status</span> <span class="n">traefik</span>
+
+<span class="n">journalctl</span> <span class="o">-</span><span class="n">u</span>  <span class="n">traefik</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>traefik access logs a topic for another day</p>
+<ul>
+<li><p>sudo view /opt/tljh/state/traefik.toml</p></li>
+</ul>
+</li>
+</ul>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://tljh.jupyter.org/en/latest/install/amazon.html">https://tljh.jupyter.org/en/latest/install/amazon.html</a></p>
+</div>
+<div class="section" id="goals">
+<h2>Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Setup an easy repeatable environment that supports notebooks</p></li>
+</ol>
+</div>
+<div class="section" id="why">
+<h2>Why<a class="headerlink" href="#why" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Lower bug footprint - failure foot print</p></li>
+<li><p>Simplify</p></li>
+<li><p>Meets the product manager requirement</p></li>
+<li><p>Meets staffing core competancies</p></li>
+<li><p>Usefull for Science Pangeo 101 Workshop - Jupyter 101 Workshop</p></li>
+<li><p>Easy to maintain and add code</p></li>
+<li><p>Delegates kubernetes to the experts</p></li>
+<li><p>Just works</p></li>
+<li><p>Likely allows focus on customized containers</p></li>
+<li><p>Easy to manage people, containers, resources</p></li>
+<li><p>Easier to monitor</p></li>
+</ol>
+</div>
+<div class="section" id="steps-wbs">
+<h2>Steps/WBS<a class="headerlink" href="#steps-wbs" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Read the docs - The Littlest JupyterHub</p></li>
+<li><p>IAC - terrform - little-hub</p></li>
+<li><p>Determine Instance Type and EBS Size</p>
+<ul class="simple">
+<li><p>2x c4.xlarge</p></li>
+<li><p>100Gig</p></li>
+</ul>
+</li>
+<li><p>This will be ephemeral - so github strategy</p></li>
+<li><p>No DASK – YET!</p></li>
+<li><p>Explore Linux Resource Monitoring</p></li>
+<li><p>Explore Docker - deeper</p></li>
+</ol>
+</div>
+<div class="section" id="id1">
+<h2>References<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p><strong>http://tljh.jupyter.org/en/latest/index.html</strong></p>
+</div>
+<div class="section" id="iac-littlehub">
+<h2>IAC - littlehub<a class="headerlink" href="#iac-littlehub" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Create a directory in juphub repo for littlehub</p></li>
+<li><p>Sizing the Instance</p></li>
+<li><p>Write the terraform code in iac repo</p></li>
+<li><p>Start the ubuntu 18.08 Server</p></li>
+<li><p>NEXT</p></li>
+</ol>
+<div class="section" id="sizing">
+<h3>Sizing<a class="headerlink" href="#sizing" title="Permalink to this headline">¶</a></h3>
+<p><strong>http://tljh.jupyter.org/en/latest/howto/admin/resource-estimation.html</strong></p>
+<p><strong>Memory</strong></p>
+<p>Maximum memory allowed per user</p>
+<p>Depending on what kind of work your users are doing, they will use different amounts of memory. The easiest way to determine this is to run through a typical user workflow yourself, and measure how much memory is used. You can use Check your memory usage to determine how much memory your user is using.</p>
+<p><em>Resizing your server</em></p>
+<p>Lots of cloud providers let your dynamically resize your server if you need it to be larger or smaller. Usually this requires a restart of the whole server - active users will be logged out, but otherwise usually nothing bad happens.</p>
+<ul class="simple">
+<li><p>Test Hanoi Notebook - study pipeline - mem and disk usage with Docker and Linux-Hobbit?</p></li>
+<li><p>RecommendedMemory=(Maxconcurrentusers×Maxmemperuser)+128MB</p></li>
+</ul>
+<div class="section" id="instance-perspective">
+<h4>Instance Perspective<a class="headerlink" href="#instance-perspective" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>How Much does 2 c4-xlarge cost</p></li>
+<li><p>How much does a 1 C8-xlarge cost?</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>c5.2xlarge 	8 	34 	16 GiB 	EBS Only 	$0.424 per Hour
+</pre></div>
+</div>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	cost per hour	hours per day	days per month 	cost per month
+c5.2xlarge	$0.42	24	30	$305.28
+</pre></div>
+</div>
+</div>
+<div class="section" id="tables-now-work-well-thanks-tony">
+<h4>Tables now work well - Thanks Tony<a class="headerlink" href="#tables-now-work-well-thanks-tony" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th>intance-type</th>
+<th>cost per hour</th>
+<th>hours per day</th>
+<th>days per month</th>
+<th>cost per month</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>c5.2xlarge</td>
+<td>$0.42</td>
+<td>24</td>
+<td>30</td>
+<td>$305.28</td>
+</tr>
+</tbody>
+</table><p>Right aligned columns</p>
+<table border="1" class="docutils">
+<thead>
+<tr>
+<th align="right">Option</th>
+<th align="right">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="right">data</td>
+<td align="right">path to data files to supply the data that will be passed into templates.</td>
+</tr>
+<tr>
+<td align="right">engine</td>
+<td align="right">engine to be used for processing templates. Handlebars is the default.</td>
+</tr>
+<tr>
+<td align="right">ext</td>
+<td align="right">extension to be used for dest files.</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="section" id="install-jupyter-hub">
+<h2>Install Jupyter Hub<a class="headerlink" href="#install-jupyter-hub" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="configure-jupyter-hub">
+<h2>Configure Jupyter Hub<a class="headerlink" href="#configure-jupyter-hub" title="Permalink to this headline">¶</a></h2>
+<p><strong>http://tljh.jupyter.org/en/latest/install/amazon.html</strong></p>
+<ol class="simple">
+<li><p>https - Bill Howe - cert - delegate to Rizbi</p></li>
+<li><p>Add users shared password and whitelist - more on authentication later - See Sam’s SAML</p></li>
+</ol>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+      
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to juphub’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Tony Butzer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

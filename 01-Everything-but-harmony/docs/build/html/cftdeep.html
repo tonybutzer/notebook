@@ -1,0 +1,377 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>CloudFormation Deep Dive &mdash; notebook via tljh 1.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> notebook via tljh
+          
+
+          
+          </a>
+
+          
+            
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <p class="caption"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="littlehub.html">Little Hub</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#bootstrap-its-that-easy">Bootstrap - Its that easy</a></li>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#adding-users">Adding Users</a></li>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#services">Services</a></li>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#goals">Goals</a></li>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#why">Why</a></li>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#steps-wbs">Steps/WBS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#id1">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#iac-littlehub">IAC - littlehub</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="littlehub.html#sizing">Sizing</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="littlehub.html#instance-perspective">Instance Perspective</a></li>
+<li class="toctree-l4"><a class="reference internal" href="littlehub.html#tables-now-work-well-thanks-tony">Tables now work well - Thanks Tony</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#install-jupyter-hub">Install Jupyter Hub</a></li>
+<li class="toctree-l2"><a class="reference internal" href="littlehub.html#configure-jupyter-hub">Configure Jupyter Hub</a></li>
+</ul>
+</li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">notebook via tljh</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>CloudFormation Deep Dive</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/cftdeep.md.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="cloudformation-deep-dive">
+<h1>CloudFormation Deep Dive<a class="headerlink" href="#cloudformation-deep-dive" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="eks-service">
+<h2>EKS - Service<a class="headerlink" href="#eks-service" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>principle author Sam Congdon</p></li>
+</ul>
+<div class="section" id="repo">
+<h3>Repo<a class="headerlink" href="#repo" title="Permalink to this headline">¶</a></h3>
+<p>https://code.chs.usgs.gov/CHS-IaC/baseline/aws-service-catalog/custom-sc/eks</p>
+<ul class="simple">
+<li><p>It starts with the product template cloudformation/product.template</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">AWSTemplateFormatVersion</span><span class="p">:</span> <span class="s2">&quot;2010-09-09&quot;</span>
+<span class="n">Description</span><span class="p">:</span> <span class="n">Deploys</span> <span class="n">an</span> <span class="n">EKS</span> <span class="n">cluster</span> <span class="n">into</span> <span class="n">an</span> <span class="n">existing</span> <span class="n">VPC</span>
+<span class="n">Metadata</span><span class="p">:</span>
+  <span class="n">AWS</span><span class="p">::</span><span class="n">CloudFormation</span><span class="p">::</span><span class="n">Interface</span><span class="p">:</span>
+    <span class="n">ParameterGroups</span><span class="p">:</span>
+      <span class="o">-</span> <span class="n">Label</span><span class="p">:</span>
+          <span class="n">default</span><span class="p">:</span> <span class="n">Network</span> <span class="n">Configuration</span>
+        <span class="n">Parameters</span><span class="p">:</span>
+          <span class="o">-</span> <span class="n">VPCID</span>
+          <span class="o">-</span> <span class="n">WorkerSubnets</span>
+          <span class="o">-</span> <span class="n">BastionSubnets</span>
+      <span class="o">-</span> <span class="n">Label</span><span class="p">:</span>
+          <span class="n">default</span><span class="p">:</span> <span class="n">EKS</span> <span class="n">Control</span> <span class="n">Plane</span> <span class="n">Configuration</span>
+        <span class="n">Parameters</span><span class="p">:</span>
+          <span class="o">-</span> <span class="n">ClusterName</span>
+          <span class="o">-</span> <span class="n">KubernetesVersion</span>
+          <span class="o">-</span> <span class="n">ControlPlaneAccess</span>
+          <span class="o">-</span> <span class="n">AdditionalEKSAdminArns</span>
+          <span class="o">-</span> <span class="n">ProvisionClusterAutoScaler</span>
+      <span class="o">-</span> <span class="n">Label</span><span class="p">:</span>
+          <span class="n">default</span><span class="p">:</span> <span class="n">EKS</span> <span class="n">Node</span> <span class="n">Configuration</span>
+        <span class="n">Parameters</span><span class="p">:</span>
+          <span class="o">-</span> <span class="n">NodeInstanceType</span>
+          <span class="o">-</span> <span class="n">NumberOfNodes</span>
+          <span class="o">-</span> <span class="n">MaxNumberOfNodes</span>
+          <span class="o">-</span> <span class="n">NodeGroupName</span>
+          <span class="o">-</span> <span class="n">NodeVolumeSize</span>
+</pre></div>
+</div>
+<p>Most of the above makes sense straight away except</p>
+<ul class="simple">
+<li><p>AdditionalEKSAdminArns</p></li>
+<li><p>and NodeGroupName</p></li>
+</ul>
+<p>Ingnoring my ignorance and moving on.</p>
+<p>This is the product definition template for the managed service</p>
+<p>Then this kicks off the eks.yml from here:</p>
+<ul class="simple">
+<li><p>https://orgsbucket.chs.usgs.gov.s3.amazonaws.com/aws-service-catalog/custom-sc/eks/cloudformation/eks.yml</p></li>
+</ul>
+</div>
+<div class="section" id="eks-yml">
+<h3>eks.yml<a class="headerlink" href="#eks-yml" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>you can pick the bastion os - interesting - ubuntu</p></li>
+<li><p>dont know what this is</p></li>
+</ul>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">KubeConfigKmsContext</span><span class="p">:</span>
+    <span class="n">Type</span><span class="p">:</span> <span class="n">String</span>
+    <span class="n">Default</span><span class="p">:</span> <span class="s2">&quot;EKSQuickStart&quot;</span>
+</pre></div>
+</div>
+<ul class="simple">
+<li><p>bastion parameters for instance type and EBS size etc</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="lots-of-flippin-resources">
+<h2>Lots of Flippin Resources<a class="headerlink" href="#lots-of-flippin-resources" title="Permalink to this headline">¶</a></h2>
+<p>so here is my approach</p>
+<ol class="simple">
+<li><p>identify all of the nested stacks in bringing up EKS</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rhassan@ip-10-12-66-180 ~]$ cat stacks.txt
+SC-574826924367-pp-bg7mcwyak4qzq
+SC-574826924367-pp-bg7mcwyak4qzq-EKSStack-6ML8ZRRNJWMY
+SC-574826924367-pp-bg7mcwyak4qzq-EKSStack-6ML8ZRRNJWMY-IamStack-15HBXYKZ003IG
+SC-574826924367-pp-bg7mcwyak4qzq-EKSStack-6ML8ZRRNJWMY-FunctionStack-L21XBGNUOESS
+SC-574826924367-pp-bg7mcwyak4qzq-EKSStack-6ML8ZRRNJWMY-EKSControlPlane-UIIHKCK6ORCR6
+SC-574826924367-pp-bg7mcwyak4qzq-EKSStack-6ML8ZRRNJWMY-NodeGroupStack-1H9SVUVWXG7ND
+SC-574826924367-pp-bg7mcwyak4qzq-EKSStack-6ML8ZRRNJWMY-ClusterAutoScalerStack-31I2WML1DL4D
+SC-574826924367-pp-bg7mcwyak4qzq-EKSStack-6ML8ZRRNJWMY-BastionStack-FKQJHZ4KS9GM
+SC-574826924367-pp-bg7mcwyak4qzq-EKSStack-6ML8ZRRNJWMY-NodeGroupStack-1H9SVUVWXG7ND
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>now look at a bash for loop to list resources such as</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>for i in `cat stacks.txt`; do echo STACKIS:$i; aws cloudformation describe-stack-resources --stack-name $i; done &gt;resources.txt
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Search for all the Roles Created</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rhassan@ip-10-12-66-180 ~]$ grep -i Role resources.txt |grep LogicalResourceId
+            &quot;LogicalResourceId&quot;: &quot;BastionRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;CleanupLoadBalancersRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;CleanupPVRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;CleanupSecurityGroupDependenciesRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;ControlPlanePassRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;ControlPlaneProvisionRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;ControlPlaneRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;CopyZipsRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;KubeConfigUploadRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;LambdaCleanUpFunctionRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;NodeInstanceRole&quot;
+            &quot;LogicalResourceId&quot;: &quot;QuickStartStackMakerRole&quot;
+</pre></div>
+</div>
+<ol class="simple">
+<li><p>Now lets look at the BastionRole</p></li>
+</ol>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>[rhassan@ip-10-12-66-180 ~]$ grep BastionRole resources.txt
+            &quot;PhysicalResourceId&quot;: &quot;SC-574826924367-pp-bg7mcwyak4qzq-EKSSt-BastionRole-RX6YQBH7KJOS&quot;,
+            &quot;LogicalResourceId&quot;: &quot;BastionRole&quot;
+[rhassan@ip-10-12-66-180 ~]$ aws iam list-role-policies --role-name &quot;SC-574826924367-pp-bg7mcwyak4qzq-EKSSt-BastionRole-RX6YQBH7KJOS&quot;
+{
+    &quot;PolicyNames&quot;: [
+        &quot;BastionPolicy&quot;,
+        &quot;QSBucketAccess&quot;
+    ]
+}
+[rhassan@ip-10-12-66-180 ~]$ aws iam get-role-policy --role-name &quot;SC-574826924367-pp-bg7mcwyak4qzq-EKSSt-BastionRole-RX6YQBH7KJOS&quot; --policy-name BastionPolicy
+{
+    &quot;RoleName&quot;: &quot;SC-574826924367-pp-bg7mcwyak4qzq-EKSSt-BastionRole-RX6YQBH7KJOS&quot;,
+    &quot;PolicyDocument&quot;: {
+        &quot;Version&quot;: &quot;2012-10-17&quot;,
+        &quot;Statement&quot;: [
+            {
+                &quot;Action&quot;: [
+                    &quot;s3:GetObject&quot;
+                ],
+                &quot;Resource&quot;: &quot;arn:aws:s3:::orgsbucket.chs.usgs.gov/aws-service-catalog/custom-sc/eks/*&quot;,
+                &quot;Effect&quot;: &quot;Allow&quot;
+            },
+            {
+                &quot;Action&quot;: [
+                    &quot;logs:CreateLogStream&quot;,
+                    &quot;logs:GetLogEvents&quot;,
+                    &quot;logs:PutLogEvents&quot;,
+                    &quot;logs:DescribeLogGroups&quot;,
+                    &quot;logs:DescribeLogStreams&quot;,
+                    &quot;logs:PutRetentionPolicy&quot;,
+                    &quot;logs:PutMetricFilter&quot;,
+                    &quot;logs:CreateLogGroup&quot;
+                ],
+                &quot;Resource&quot;: &quot;arn:aws:logs:us-west-2:574826924367:log-group:SC-574826924367-pp-bg7mcwyak4qzq-EKSStack-6ML8ZRRNJWMY-BastionStack-FKQJHZ4KS9GM-BastionMainLogGroup-5CXQPSWWQG5H:*&quot;,
+                &quot;Effect&quot;: &quot;Allow&quot;
+            },
+            {
+                &quot;Action&quot;: [
+                    &quot;ec2:AssociateAddress&quot;,
+                    &quot;ec2:DescribeAddresses&quot;
+                ],
+                &quot;Resource&quot;: &quot;*&quot;,
+                &quot;Effect&quot;: &quot;Allow&quot;
+            }
+        ]
+    },
+    &quot;PolicyName&quot;: &quot;BastionPolicy&quot;
+}
+</pre></div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2019, Tony Butzer
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>
